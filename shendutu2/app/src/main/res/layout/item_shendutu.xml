@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="20dp"
+
+
+   >
+
+
+
+
+       <LinearLayout
+               android:id="@+id/notifyzong"
+               android:layout_width="match_parent"
+               android:layout_height="20dp"
+               android:background="#ffffff"
+               android:orientation="horizontal"
+       >
+
+
+           <LinearLayout
+               android:id="@+id/linear_white"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#ffffff"
+                   android:weightSum="2"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.7"
+               android:alpha="0.12"
+           />
+
+
+
+           <LinearLayout
+
+               android:id="@+id/linear_yanse"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/colorPrimary"
+                   android:weightSum="2"
+                   android:orientation="horizontal"
+                   android:layout_weight="0.3"
+               android:alpha="0.12"
+           />
+
+
+
+       </LinearLayout>
+
+
+
+
+
+       <TextView
+           android:id="@+id/tv_center"
+           android:layout_width="1dp"
+           android:layout_height="1dp"
+           android:layout_centerHorizontal="true"
+           android:visibility="invisible"/>
+
+       <TextView
+           android:id="@+id/tv_zonge"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2411.344000000"
+           android:layout_toLeftOf="@+id/tv_center"
+           android:layout_marginRight="15dp"
+           android:layout_centerVertical="true"
+           android:textSize="13sp"
+           />
+
+       <TextView
+           android:id="@+id/tv_jiage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0.038"
+           android:layout_toRightOf="@+id/tv_center"
+           android:layout_marginLeft="15dp"
+           android:layout_centerVertical="true"
+           android:textSize="13sp"
+           />
+
+   </RelativeLayout>
+
+
+</RelativeLayout>
